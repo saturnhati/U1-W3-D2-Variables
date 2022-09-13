@@ -34,7 +34,7 @@ function addsNumbers(){
     // se la somma non un numero, dà errore
     if(isNaN(parseInt(primoNumero.value) + parseInt(secondoNumero.value))){
     console.log('errore');
-    alert("Inserisci un NUMERO, non una stringa!")
+    alert("Inserisci un NUMERO!")
     }
     // se la somma è un numero, scrivi il risultato in un div con id "resultsAdd"
     else{
@@ -50,7 +50,7 @@ function diffsNumbers(){
     if(isNaN(parseInt(terzoNumero.value) + parseInt(quartoNumero.value))){
     console.log('errore');
     // document.getElementById("results").innerHTML = "errore"
-    alert("Inserisci un NUMERO, non una stringa!")
+    alert("Inserisci un NUMERO!")
     }
     // se la somma è un numero, scrivi il risultato in un div con id "resultsDiff"
     else{
@@ -58,3 +58,17 @@ function diffsNumbers(){
     resultsDiff.innerHTML = parseInt(terzoNumero.value) - parseInt(quartoNumero.value)
     }
 }
+
+// PROVA COUNTER
+
+let counter = 0
+
+function clickCounter(){
+    counter ++
+    document.getElementById("clicksNumber").innerHTML = counter
+ }
+
+ function resetCounter(){
+    counter = 0
+    document.getElementById("clicksNumber").innerHTML = counter
+ }
